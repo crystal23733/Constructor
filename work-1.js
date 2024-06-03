@@ -2,4 +2,6 @@
 // * 목적은 함수를 조금 더 이해하려고 함.
 // * 매개변수가 객체인 경우가 아래에 작성될 예정임.
 
-console.log('Hi');
+function workOne (a, b) {
+  return 오브젝트;
+}
