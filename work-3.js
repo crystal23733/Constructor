@@ -1,6 +1,8 @@
-function workThree (a, b) {
-  let local = {};
-  local[a] = a;
-  loackb[b] =b; 
+function workThree (index, name) {
+  let local = {
+    number : index + 1,
+    name : name
+  };
   return local;
 }
+console.log(workThree('yoo', 'hoyeong'));
