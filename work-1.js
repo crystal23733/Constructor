@@ -1,16 +1,29 @@
-// * 이 파일은 함수 연습 파일임.
-// * 목적은 함수를 조금 더 이해하려고 함.
-// * 매개변수가 객체인 경우가 아래에 작성될 예정임.
+// * 이 파일은 기본 함수 연습 파일입니다.
+// * 목적은 함수를 조금 더 이해하려고 합니다.
+// * 매개변수가 객체인 경우가 아래에 작성될 예정입니다.
 
-function workOne (a,b) {
-  // todo 지역변수로 객체를 초기화, 매개변수 a,b두 개가 객체의 키이름과 값 리터럴이 되었음 좋겠음.
-  let localValue = {};
-  localValue[a] = a;
-  localValue[b] = b;
-  // for(let i = 0; i < arg[i]; i++){
-  //   localValue[i] = arg;
-  // }
-  return localValue;
-}
-
-console.log(workOne('name','hoyeong'));
+function workOne(a, b) {
+  //* logic : 매개변수 두개를 받은 다음
+  //* logic : return은 객체였음 좋겠다.
+  if(typeof(a) === "string") {
+    if(typeof(b) === "string") {
+      
+      let localVariable = {};
+      
+      localVariable[a] = a;
+      localVariable[b] = b;
+      
+      return localVariable;
+    } else {
+      console.error("좋은말할때 문자열로 바꿔라");
+    }
+  } else {
+    console.error("좋은말할때 문자열로 바꿔라");
+  }
+  // * condition : 매개변수 모두 문자열이여야 한다.
+  
+  
+  }
+  
+  let test = workOne(1, 2);
+  console.log(test);
