@@ -34,8 +34,8 @@ let arrMembers = [];
 //   arrMembers.push(member);
 // }
 
-names.forEach((item) => {
-  let member = makeMember(i, names[i]);
+names.forEach((item, index) => {
+  let member = makeMember(index, item);
   arrMembers.push(member);
 })
 
