@@ -5,4 +5,4 @@ function workThree (index, name) {
   };
   return local;
 }
-console.log(workThree('yoo', 'hoyeong'));
+module.exports = workThree;
