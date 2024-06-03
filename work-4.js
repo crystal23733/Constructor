@@ -29,9 +29,14 @@ const names = [
 const makeMember = require('./work-3');
 
 let arrMembers = [];
-for(let i = 0; i < names.length; i++){
+// for(let i = 0; i < names.length; i++){
+//   let member = makeMember(i, names[i]);
+//   arrMembers.push(member);
+// }
+
+names.forEach((item) => {
   let member = makeMember(i, names[i]);
   arrMembers.push(member);
-}
+})
 
 console.log(arrMembers);
